@@ -5,3 +5,11 @@ db.sqlite3
 /staticfiles/
 .vscode/
 .idea/
+# .gitignore
+__pycache__/
+*.pyc
+*.env
+.env
+db.sqlite3
+venv/
+myenv/
