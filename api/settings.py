@@ -5,7 +5,7 @@ import dj_database_url
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = config("j_$q0)^6r21+3bu8gg5f+31%-5eboj^5_nds47x2d)w*szlrt4")
+SECRET_KEY = config("SECRET_KEY", default="unsafe-secret-key")
 DEBUG = config("DEBUG", default=False, cast=bool)
 ALLOWED_HOSTS = ['your-app-name.up.railway.app']
 
