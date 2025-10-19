@@ -7,7 +7,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = config("SECRET_KEY", default="unsafe-secret-key")
 DEBUG = config("DEBUG", default=False, cast=bool)
-ALLOWED_HOSTS = ['your-app-name.up.railway.app']
+ALLOWED_HOSTS = ALLOWED_HOSTS = config("ALLOWED_HOSTS", default="127.0.0.1,localhost").split(",")
 
 INSTALLED_APPS = [
     "django.contrib.admin",
